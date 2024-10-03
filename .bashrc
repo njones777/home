@@ -75,13 +75,4 @@ extract () {
  }
 
 
- #Function to help with purger
- gtr_than() {
-	echo -n > $2
-	#bn=$(basename ${2})
-       	#echo $bn	
-	find $1 -type f -size +20M -exec basename {} \; >> $2 #"${1}/.mnotr/${bn}"
-	sort -o $2 $2
-
-}
 . "$HOME/.cargo/env"
